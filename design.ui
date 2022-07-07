@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>461</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>461</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Lang-Guru</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="newWord_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>281</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <widget class="QLineEdit" name="writeEnglish">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(231, 231, 231);
+border: 2px solid rgb(197, 197, 255);
+border-radius: 10px;</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNone</set>
+     </property>
+     <property name="inputMask">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="writeRussian">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>160</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(231, 231, 231);
+border: 2px solid rgb(197, 197, 255);
+border-radius: 10px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="en_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>221</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(91, 91, 91);</string>
+     </property>
+     <property name="text">
+      <string>Английский язык</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ru_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>221</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(91, 91, 91);</string>
+     </property>
+     <property name="text">
+      <string>Русский язык</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="newWord_button">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>220</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: rgb(66, 75, 255);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(197, 197, 255);
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: rgb(85, 0, 255);
+}
+
+QPushButton:pressed {
+	color: rgb(85, 0, 255);
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(85, 0, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="buttons_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>181</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(151, 147, 255);</string>
+    </property>
+    <widget class="QPushButton" name="newWord_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: rgb(255, 255, 255);
+	border: 3px inset rgb(66, 75, 255);
+	border-radius: 10px;
+	color: rgb(91, 91, 91);
+	position: absolute;
+}
+
+QPushButton:hover {
+	background-color: rgb(199, 253, 255);
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:pressed {
+	background-color: rgb(139, 141, 255);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Добавить слово</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="searchWord_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: rgb(255, 255, 255);
+	border: 3px inset rgb(66, 75, 255);
+	border-radius: 10px;
+	color: rgb(91, 91, 91);
+	position: absolute;
+}
+
+QPushButton:hover {
+	background-color: rgb(199, 253, 255);
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:pressed {
+	background-color: rgb(139, 141, 255);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Найти слово</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="translateMenu_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: rgb(255, 255, 255);
+	border: 3px inset rgb(66, 75, 255);
+	border-radius: 10px;
+	color: rgb(91, 91, 91);
+	position: absolute;
+}
+
+QPushButton:hover {
+	background-color: rgb(199, 253, 255);
+	color: rgb(0, 0, 0);
+}
+
+QPushButton:pressed {
+	background-color: rgb(139, 141, 255);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Переводчик</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="searchWord_widget" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>281</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <widget class="QTableWidget" name="wordList">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>241</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(231, 231, 231);
+border-top: 1px solid rgb(151, 147, 255);
+color: rgb(91, 91, 91);</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustIgnored</enum>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Русский</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Английский</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+     </column>
+    </widget>
+    <widget class="QRadioButton" name="en_check">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+color: rgb(91, 91, 91);
+}
+
+QRadioButton::indicator {
+width: 11px;
+height: 11px;
+border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(132,132,132);
+border-radius: 5px;
+background-color: white; 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color: rgb(0,116,188); 
+width: 7px; 
+height: 7px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Английский язык</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="ru_check">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+color: rgb(91, 91, 91);
+}
+
+QRadioButton::indicator {
+width: 11px;
+height: 11px;
+border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(132,132,132);
+border-radius: 5px;
+background-color: white; 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color: rgb(0,116,188); 
+width: 8px; 
+height: 8px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Русский язык</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="search_line">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(231, 231, 231);
+border: 2px solid rgb(197, 197, 255);
+border-radius: 5px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search_btn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>50</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: rgb(66, 75, 255);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(197, 197, 255);
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: rgb(85, 0, 255);
+}
+
+QPushButton:pressed {
+	color: rgb(85, 0, 255);
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(85, 0, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Найти</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="allWords_btn">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>90</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: rgb(66, 75, 255);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(197, 197, 255);
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: rgb(85, 0, 255);
+}
+
+QPushButton:pressed {
+	color: rgb(85, 0, 255);
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(85, 0, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Все слова</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="translate_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>281</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <widget class="QRadioButton" name="trans_to_ru">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+color: rgb(91, 91, 91);
+}
+
+QRadioButton::indicator {
+width: 11px;
+height: 11px;
+border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(132,132,132);
+border-radius: 5px;
+background-color: white; 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color: rgb(0,116,188); 
+width: 8px; 
+height: 8px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>На русский</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="trans_to_en">
+     <property name="geometry">
+      <rect>
+       <x>146</x>
+       <y>120</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton {
+color: rgb(91, 91, 91);
+}
+
+QRadioButton::indicator {
+width: 11px;
+height: 11px;
+border-radius: 5px;
+}
+
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(132,132,132);
+border-radius: 5px;
+background-color: white; 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color: rgb(0,116,188); 
+width: 8px; 
+height: 8px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>На английский</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="translate_btn">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>150</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	background-color: rgb(66, 75, 255);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(197, 197, 255);
+	border-radius: 5px;
+}
+
+QPushButton:hover {
+	background-color: rgb(85, 0, 255);
+}
+
+QPushButton:pressed {
+	color: rgb(85, 0, 255);
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(85, 0, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Перевести</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="result_label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(231, 231, 231);
+border: 2px solid rgb(197, 197, 255);
+border-radius: 5px;
+color: rgb(91, 91, 91);</string>
+     </property>
+     <property name="text">
+      <string>Результат</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>50</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(91, 91, 91);
+</string>
+     </property>
+     <property name="text">
+      <string>Введите слово</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>79</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(231, 231, 231);
+border: 2px solid rgb(197, 197, 255);
+border-radius: 5px;
+color: rgb(91, 91, 91);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tts_btn">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>170</y>
+       <width>23</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 3px;
+}
+
+QPushButton:pressed {
+	border: 1px solid rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <zorder>buttons_widget</zorder>
+   <zorder>newWord_widget</zorder>
+   <zorder>searchWord_widget</zorder>
+   <zorder>translate_widget</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
